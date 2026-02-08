@@ -3,7 +3,7 @@ name: CI Docker Build & Push
 on:
   push:
     branches:
-      - lab-docker
+      - test
 
 jobs:
   docker:
@@ -12,9 +12,9 @@ jobs:
     #environment: dev
 
     env:
-      IMAGE_NAME: nom_iame_docker
+      IMAGE_NAME: nom_iame_docker2
       IMAGE_TAG: 1.0.0
-      DOCKER_HUB_REGISTRY: docker.io/mon_nom_utilisateur
+      DOCKER_HUB_REGISTRY: docker.io/maidara400
 
     steps:
       - name: Récupération du code
